@@ -15,13 +15,13 @@ function main(params) {
     }
   });
   rawProxies.unshift({
-    name: "🏴‍☠️ Script Elite",
+    name: "🏴‍☠️ DΙГЕСΤ",
     type: "direct",
     udp: true
   });
   const proxyNames = rawProxies.map(p => p.name).filter(Boolean);
   // 排除直连节点后的纯代理节点列表（专门给自动化组使用）
-  const nodeNames = proxyNames.filter(name => name !== "🏴‍☠️ Script Elite");
+  const nodeNames = proxyNames.filter(name => name !== "🏴‍☠️ DΙГЕСΤ");
   // ---------- 地区筛选逻辑 ----------
   const getProxiesByKeyword = (keywordRegex) => {
     return nodeNames.filter(name => keywordRegex.test(name));
@@ -47,7 +47,7 @@ function main(params) {
         proxies: [
           //"AUTO",
           allNodes.length > 0 ? "🇺🇳 ALL" : null,
-          "🏴‍☠️ Script Elite",
+          "🏴‍☠️ DΙГЕСΤ",
           twNodes.length > 0 ? "🇹🇼 ROC" : null,
           hkNodes.length > 0 ? "🇭🇰 HKG" : null,
           jpNodes.length > 0 ? "🇯🇵 JPN" : null,
@@ -73,7 +73,7 @@ function main(params) {
       {
         name: "🇹🇼 ROC",
         type: "url-test",
-        proxies: twNodes.length > 0 ? twNodes : ["🏴‍☠️ Script Elite"],
+        proxies: twNodes.length > 0 ? twNodes : ["🏴‍☠️ DΙГЕСΤ"],
         url: "http://www.gstatic.com/generate_204",
         interval: 900,
         tolerance: 150
@@ -81,7 +81,7 @@ function main(params) {
       {
         name: "🇭🇰 HKG",
         type: "url-test",
-        proxies: hkNodes.length > 0 ? hkNodes : ["🏴‍☠️ Script Elite"],
+        proxies: hkNodes.length > 0 ? hkNodes : ["🏴‍☠️ DΙГЕСΤ"],
         url: "http://www.gstatic.com/generate_204",
         interval: 900,
         tolerance: 150
@@ -89,7 +89,7 @@ function main(params) {
       {
         name: "🇯🇵 JPN",
         type: "url-test",
-        proxies: jpNodes.length > 0 ? jpNodes : ["🏴‍☠️ Script Elite"],
+        proxies: jpNodes.length > 0 ? jpNodes : ["🏴‍☠️ DΙГЕСΤ"],
         url: "http://www.gstatic.com/generate_204",
         interval: 900,
         tolerance: 150
@@ -97,7 +97,7 @@ function main(params) {
       {
         name: "🇰🇷 KOR",
         type: "url-test",
-        proxies: krNodes.length > 0 ? krNodes : ["🏴‍☠️ Script Elite"],
+        proxies: krNodes.length > 0 ? krNodes : ["🏴‍☠️ DΙГЕСΤ"],
         url: "http://www.gstatic.com/generate_204",
         interval: 900,
         tolerance: 150
@@ -105,7 +105,7 @@ function main(params) {
       {
         name: "🇸🇬 SGP",
         type: "url-test",
-        proxies: sgNodes.length > 0 ? sgNodes : ["🏴‍☠️ Script Elite"],
+        proxies: sgNodes.length > 0 ? sgNodes : ["🏴‍☠️ DΙГЕСΤ"],
         url: "http://www.gstatic.com/generate_204",
         interval: 900,
         tolerance: 150
@@ -113,7 +113,7 @@ function main(params) {
       {
         name: "🇺🇸 USA",
         type: "url-test",
-        proxies: usNodes.length > 0 ? usNodes : ["🏴‍☠️ Script Elite"],
+        proxies: usNodes.length > 0 ? usNodes : ["🏴‍☠️ DΙГЕСΤ"],
         url: "http://www.gstatic.com/generate_204",
         interval: 900,
         tolerance: 150
