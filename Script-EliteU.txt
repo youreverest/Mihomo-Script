@@ -238,6 +238,7 @@ function main(params) {
     "DOMAIN-SUFFIX,cnzz.com,REJECT",
     "DOMAIN-SUFFIX,union.baidu.com,REJECT",
     "DOMAIN-SUFFIX,e.kuaishou.com,REJECT",
+    "DOMAIN-SUFFIX,dm.wo.com.cn,REJECT",
 
     // 苹果国内直连
     "DOMAIN-SUFFIX,apple.com.cn,DIRECT",
